@@ -307,7 +307,7 @@ for profile in "${profiles_array[@]}"; do
   fi
 
   if [[ "${platform}" != "default" ]]; then
-    image_name_section="${image_name_section}-${platform}"
+    image_name_section="${image_name_section}-${platform}-pattern-${pattern_no}"
   fi
 
   image_id="${image_name_section}:${image_version_section}"
